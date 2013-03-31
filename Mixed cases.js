@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title></title>
+    <title>mixed cases</title>
     <link href="styles/js-console.css" rel="stylesheet" />
 </head>
 <body>
@@ -29,7 +29,7 @@
 
             return text;
         }
-        toUpCase(text);
+        text = toUpCase(text);
 
         function toLowCase(text) {
             for (start = text.indexOf("<lowcase>", 0) ; start < text.length - 1; start = text.indexOf("<lowcase>", end)) {
@@ -49,7 +49,7 @@
 
             return text;
         }
-        toLowCase(text);
+        text = toLowCase(text);
 
         function toMixCase(text) {
             for (start = text.indexOf("<mixcase>", 0) ; start < text.length - 1; start = text.indexOf("<mixcase>", end)) {
@@ -77,7 +77,7 @@
 
             return text;
         }
-        toMixCase(text);
+        text = toMixCase(text);
 
         jsConsole.writeLine(text);
     </script>
